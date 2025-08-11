@@ -1,2 +1,11 @@
 # Turtle
-Consider that your screen is a graph where x-axis is width and y-axis is height in pixels
+Consider that your screen is a graph where x-axis is width and y-axis is height in pixels, now draw a line somewhere on the screen we will need to have a starting and ending paoint of for the line and both points containing both values of x and y.
+First we make a class `Point` which lets us exprees our x and y value into a single quantity, then we take two point i.e starting and ending and make a class `Line` which takes these two points and lets us express the into a single value.
+After that we make another class `Canvas` which extends to a prebuilt class in java `Jpanel`, now this Canvas class takes in lines and and adds them to an array of data type `Line` and then uses the Jpanel prebuilt method to draw these lines in the array.
+With this we can make a class `Pen` Which sets and initial position on the canvas and then we make canvas object inside it and through that object we can make lines any way we want between two points, we also make `PenUp` / `PenDonwn` methods for when we just want to move the pen and not draw,
+Now we make another class `Turtle`, which makes the pen move a certain number of distance that may be specified by the user, it takes that distance and moves the pen that distance and also we implement `turnRight` and `turnLeft` methods, we do this by varying values of x and y.
+But this also presents with another issue that we need to keep track of in which position the turtle is i.e 3 rights make a left so we can not only change values blindly, to keep track we make a tracker variable that increments and decrements and assigns the values of how much we want to move and in which direction, we predefin condions in our program i.e turnRight=1, turnLeft=3 etc.
+Now as we can manupulate the turtle on will  we make some functions for making a square, zigzag by manipulating turtle in different ways. As implemented in `Commands` class.
+We can also have the user make his custom fucntion by taking in a string of characters in which different characters corosponding do different methods inside `Turtle`. As implemented in `Commander` class.
+
+Finally we use a `App` class to implement the exectution of different methods of our classes in a central class and the `Main ` file is only used to make object of `App` and run the method that runs our desired functions.
