@@ -21,6 +21,8 @@ public class Turtle
         pen=new Pen(this.position);
         
     }
+    //|||||| I didn't know how to call the above constructor in the Commander class so I made this dedicated fucnction to change
+    //||||| position
     public void change_postion(Point neww)
     {
         this.position=neww;
@@ -103,3 +105,4 @@ public class Turtle
         this.position=next_position;
     }
 }
+
